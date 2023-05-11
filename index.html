@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta lang='us-en'></meta>
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Technical Documentation</title>
+
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Technical Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#intro">Intro</a></li>
+    
+        
+            <li><a class="nav-link" href="#javascript_and_java">Javascript and Java</a></li>
+    
+        
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+    
+            
+            <li><a class="nav-link" href="#variable_scope">Variable Scope</a></li>
+    
+            <li><a class="nav-link" href="#function_declarations">Function Declarations</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro">
+            <header>Intro</header>
+            <p>Javascript is an object-oriented scripting language, meaning that functional pieces of code are stored in discrete entities called objects.
+                Javascript comes with a variety of pre-built objects that provide functions such as math operations, using dates, and statments just to name a few.
+                An advantage of using object-oriented programming (OOP) is that code can be built in a modular way which can easily be modified without having to start from scratch.
+            </p>
+            <p>OOP has the ability to extend the Javascript language beyond its basic functionality so that it can perform certain functions more effectively.
+
+            </p>
+            <ul>
+                <li>Client-side Javascript extends the functionality of the core language by using objects to control a browser and the Document Object Model (DOM).
+                    This allows users to interact with the various elements in an HTML page in a way that would not be possible with HTML and CSS alone.
+
+                </li>
+                <li>Server-side Javascript uses objects to extend the core language in such a way as to allow various actions and communication between a client and
+                    a server. For example, server side extensions can allow an application to communicate with the database to retrieve information.
+
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="javascript_and_java">
+            <header>Javascript and Java</header>
+            <p>Javascript and Java may sound similar, but they are quite different in a few ways.
+                Javascript follows some of Java expression syntax, naming conventions, and control-flow
+                constructs hence the similar names.
+            </p>
+            <p>However, Javascript supports a simpler environment that is based on a smaller number of data types and has a prototype-based object model instead of 
+                the class-based object model. Javascript is also alot more free-form than Java in that all the variables, classes, and methods don't need to be declared.
+                
+            </p>
+            <header>Hello World</header>
+            <p>To write your first Javascript code we can start with a simple "Hello World" </p>
+            <code>function greetMe(yourName) {alert("Hello " + yourName);}
+                greetMe("World");
+            </code>
+        </section>
+        <section class="main-section" id="variables">
+            <header>Variables</header>
+            <p>Variables function as symbolic names for values. The names that can be used to assign variables to values
+                conform to certain rules.
+            </p>
+            <p>In Javascript, variables must start with a letter, underscore, or dollar sign; digits 0-9 can also be used.
+                However, Javascript is case sensitive, so variables must be called as they are declared.
+
+            </p>
+            <code>
+                hello = "Hello"
+                _lucky_num = 6
+                $statment = 4 + 5
+                
+            </code>
+        </section>
+        <section class="main-section" id="variable_scope">
+            <header>Variable Scope</header>
+            <p>Scope refers to the availability of a variable to be accessed. When a variable is declared
+                inside a function, it is considered local and can only be accessed within that variable.
+                On the other hand, if a variable is declared outside of a function it is considered global
+                and can be called anywhere in the code.
+            </p>
+            <ul>
+                <li>
+                    Constants are another example of scope. They are a declared variable that cannot be
+                    declared or changed while the script is running. 
+                </li>
+                <li>
+                    Global variables are also properties of the global object, which is the window in the case
+                    of web pages. Using window.variable can be used to access this global variable.
+
+                </li>
+            </ul>
+            <code>
+                hello_world = "Hello World!"
+                window.hello_world
+            </code>
+        </section>
+        <section class="main-section" id="function_declarations">
+            <header>Function Declarations</header>
+            <p>A function is created using the "function" keyword followed by:</p>
+            <ul>
+                <li>The name of the function.</li>
+                <li>A list of arguments for the function that are enclosed in parantheses
+                    and separated by commas.
+                </li>
+                <li>The Javascript statments that define the function which are enclosed in curly braces.
+                </li>
+            </ul>
+            <p>
+                Here we have an example of a simple function called square and another function below it
+                that takes two numbers as its argument and returns the product of them:
+            </p>
+            <code>
+                function square(number) {
+                    return number * number;
+                }
+            </code>
+
+            <code>
+                function compute(num1, num2) {
+                    return num1 * num2;
+                }
+            </code>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+
+
+</html>

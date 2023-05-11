@@ -1,0 +1,149 @@
+html, body{
+    font-family: sans-serif;
+    background-color: azure;
+    line-height: 1.5;
+}
+
+#navbar{
+    font-weight: 300;
+    font-size: xx-large;
+    min-width: 10%;
+    width: 25%;
+    height: auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: none;
+    border-color: rgba(0,22,22,0.4);
+    position: absolute;
+    background-color:rgba(215, 248, 250, 0.4);
+    border-radius: 20px;
+}
+
+#navbar header{
+    font-size: x-large;
+    color: rgb(42, 65, 65);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+#navbar ul{
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80%;
+    border-radius: 50px;
+    
+}
+
+
+#navbar li{
+    list-style-type: none;
+    width: 100%;
+    border: 1px solid #555;
+    border-width: 5%;
+    position: relative;
+    border-bottom: 0;
+    
+    
+
+
+}
+
+#navbar a{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    padding: 10%;
+    color:rgb(52, 160, 160);
+    cursor: pointer;
+    padding-left: auto;
+    text-align: center;
+}
+
+a:hover{
+    color: aqua;
+    width: 100%;
+}
+
+
+header {
+    color: black;
+    margin: auto;
+    font-weight: thin;
+    text-align: center;
+    font-size: large;
+    text-decoration: underline;
+
+}
+
+#main-doc {
+    
+    padding: 20px;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-bottom: auto;
+}
+
+code{
+    
+    background-image: linear-gradient(rgba(205, 250, 250, 0.8), rgba(211, 240, 241,0.5));
+    padding: 0.5%;
+    border-radius: 10px;
+    word-wrap: normal;
+    color: black;
+    
+}
+
+p{
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+li{
+    color: #3d3b3b;
+}
+
+@media (hover: hover) {
+    a:hover{
+        color: azure;
+    }
+  }
+  
+@media (max-height: 800px), screen and (orientation: portrait) {
+    #navbar header{
+        font-size: small;
+        color: rgb(39, 61, 61);
+        text-decoration: none;
+        text-align: center;
+        padding-top: 5%;
+        
+    
+    }
+    #navbar a{
+        display: block;
+        width: auto;
+        text-decoration: none;
+        padding: 1%;
+        color:rgb(52, 160, 160);
+        cursor: pointer;
+        padding-left: auto;
+        text-align: center;
+        font-size: large;
+    }
+    
+    #navbar ul{
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 80%;
+        border-radius: 10px;
+        
+    }
+
+}
